@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #4B2E2A;
+    --secondary-color: #C49A6C;
+    --background: #f5eee6;
+    --accent: #6B8E23;
+    --text: #2E2E2E;
+}
+
+/* #about {} */
+
+/* #about .container {} */
+
+#about .container .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    align-items: center;
+    gap: 3rem;
+}
+
+#about .container .grid img {
+    width: 100%;
+}
+
+#about .container .grid .content {
+    padding: 30px 0;
+}
+
+#about .container .grid .content h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#about .container .grid .content h3 {
+    font-size: 50px;
+    margin: 1.5rem 0;
+}
+
+#about .container .grid .content p {
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    line-height: 1.4;
+}
+
+#about .container .grid .content button {
+    margin: 1rem 0;
+}
+
+#about .container .grid .content .services-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+#about .container .grid .content .services-box .box {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#about .container .grid .content .services-box .box:nth-child(2) {
+    transform: translateY(10px);
+}
+
+#about .container .grid .content .services-box .box:nth-child(3) {
+    transform: translateY(20px);
+}
+
+@media (max-width:865px) {
+    #about .container .grid .content {
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    #about .container .grid .content .services-box {
+        display: block;
+        padding: 0 30px;
+    }
+}

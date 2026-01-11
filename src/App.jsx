@@ -1,9 +1,11 @@
-import React from 'react'
+import About from './Components/Pages/About/About'
+import Home from './Components/Pages/Home/Home'
 
 export default function App() {
   return (
 	<div>
-		<h1>App</h1>
+		<Home />
+		<About />
 	</div>
   )
 }
