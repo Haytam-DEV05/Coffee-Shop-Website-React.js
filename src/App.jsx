@@ -1,6 +1,7 @@
 import About from "./Components/Pages/About/About";
 import Home from "./Components/Pages/Home/Home";
 import Menu from "./Components/Pages/Menu/Menu";
+import Gallery from "./Components/Pages/Gallery/Gallery";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Home />
       <About />
 	  <Menu />
+	  <Gallery />
     </div>
   );
 }
