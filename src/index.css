@@ -12,6 +12,10 @@
 	--text: #2E2E2E;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 section {
 	display: flex;
 	justify-content: center;
