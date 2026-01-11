@@ -26,7 +26,7 @@ export default function About() {
       <div className="container">
         <div className="grid">
           <img
-            src="/public/images/about-img-1.png"
+            src="/images/about-img-1.png"
             alt="about image"
             aria-label="about image"
           />

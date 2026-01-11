@@ -8,8 +8,8 @@ export default function App() {
     <div>
       <Home />
       <About />
-	  <Menu />
-	  <Gallery />
+      <Menu />
+      <Gallery />
     </div>
   );
 }
