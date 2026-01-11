@@ -3,42 +3,42 @@ export default function Menu() {
   const arrMenu = [
     {
       id: 1,
-      pathImage: "/public/images/menu-1.png",
+      pathImage: "/images/menu-1.png",
       title: "coffee bean",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi debitis veritatis porro, molestias cumque odio corrupti asperiores",
     },
     {
       id: 2,
-      pathImage: "/public/images/menu-2.png",
+      pathImage: "/images/menu-2.png",
       title: "coffee bean",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi debitis veritatis porro, molestias cumque odio corrupti asperiores",
     },
     {
       id: 3,
-      pathImage: "/public/images/menu-3.png",
+      pathImage: "/images/menu-3.png",
       title: "coffee bean",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi debitis veritatis porro, molestias cumque odio corrupti asperiores",
     },
     {
       id: 4,
-      pathImage: "/public/images/menu-4.png",
+      pathImage: "/images/menu-4.png",
       title: "coffee bean",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi debitis veritatis porro, molestias cumque odio corrupti asperiores",
     },
     {
       id: 5,
-      pathImage: "/public/images/menu-5.png",
+      pathImage: "/images/menu-5.png",
       title: "coffee bean",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi debitis veritatis porro, molestias cumque odio corrupti asperiores",
     },
     {
       id: 6,
-      pathImage: "/public/images/menu-6.png",
+      pathImage: "/images/menu-6.png",
       title: "coffee bean",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi debitis veritatis porro, molestias cumque odio corrupti asperiores",
