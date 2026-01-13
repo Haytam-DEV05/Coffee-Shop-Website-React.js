@@ -53,6 +53,11 @@
     width: 100%;
 }
 
+
+@media (max-width:900px) {
+    
+}
+
 #header #home {
     min-height: 100vh;
     display: flex;
