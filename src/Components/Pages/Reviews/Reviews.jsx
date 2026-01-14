@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Reviews.css";
 import { GrPrevious, GrNext } from "react-icons/gr";
 
@@ -8,7 +8,7 @@ export default function Reviews() {
   const reviews = [
     {
       id: 1,
-      img: "/public/images/pic-1.png",
+      img: "/images/pic-1.png",
       fullName: "Haitam Nefal",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
               dolor molestias expedita veritatis aliquam ipsa recusandae,
@@ -18,7 +18,7 @@ export default function Reviews() {
     },
     {
       id: 2,
-      img: "/public/images/pic-2.png",
+      img: "/images/pic-2.png",
       fullName: "Asmaa Nouri",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
               dolor molestias expedita veritatis aliquam ipsa recusandae,
@@ -28,7 +28,7 @@ export default function Reviews() {
     },
     {
       id: 3,
-      img: "/public/images/pic-3.png",
+      img: "/images/pic-3.png",
       fullName: "Anouare Adiri",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
               dolor molestias expedita veritatis aliquam ipsa recusandae,
@@ -38,21 +38,28 @@ export default function Reviews() {
     },
   ];
 
-  const handlePrevReview = (e) => {
-    e.preventDefault();
+  const handlePrevReview = () => {
     if (currentReview === 0) {
       return setCurrentReview(reviews.length - 1);
     }
     return setCurrentReview(currentReview - 1);
   };
 
-  const handleNextReview = (e) => {
-    e.preventDefault();
+  const handleNextReview = () => {
     if (currentReview === reviews.length - 1) {
       return setCurrentReview(0);
     }
     return setCurrentReview(currentReview + 1);
   };
+
+  useEffect(() => {
+    const intervel = setInterval(() => {
+      setCurrentReview((prev) => {
+        return prev === reviews.length - 1 ? 0 : prev + 1;
+      });
+    }, 2000);
+    return () => clearInterval(intervel);
+  }, []);
 
   return (
     <section id="reviews">
