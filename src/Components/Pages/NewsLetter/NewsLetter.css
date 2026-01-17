@@ -1,0 +1,56 @@
+#newsletter {
+    min-height: 200px;
+    background-image: url(/public/images/newsletter-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#newsletter .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#newsletter .container .content {
+    text-align: center;
+    color: #ffff;
+}
+
+#newsletter h2 {
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+
+#newsletter p {
+    color: #ffff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#newsletter form {
+    background-color: #ffff;
+    max-width: 80%;
+    padding: 1rem 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    display: flex;
+}
+
+#newsletter form input{
+    width: 90%;
+    outline: none;
+    padding: 10px 30px;
+    border: none;
+}
+
+#newsletter form button{
+    padding: .5rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+#newsletter form button:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}

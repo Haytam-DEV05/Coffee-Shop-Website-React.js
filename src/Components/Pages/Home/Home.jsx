@@ -8,13 +8,12 @@ import { useState } from "react";
 export default function Home() {
   const [openMenu, setOpenMenu] = useState(false);
   const links = [
-    { id: 1, path: "home", name: "Home" },
-    { id: 2, path: "about", name: "about" },
-    { id: 3, path: "menu", name: "Menu" },
-    { id: 4, path: "gallery", name: "Gallery" },
-    { id: 5, path: "reviews", name: "Reviews" },
-    { id: 6, path: "contact", name: "Contact" },
-    { id: 7, path: "blogs", name: "Blogs" },
+    { id: 1, path: "#home", name: "Home" },
+    { id: 2, path: "#about", name: "about" },
+    { id: 3, path: "#menu", name: "Menu" },
+    { id: 4, path: "#gallery", name: "Gallery" },
+    { id: 5, path: "#reviews", name: "Reviews" },
+    { id: 6, path: "#blogs", name: "Blogs" },
   ];
 
   return (
