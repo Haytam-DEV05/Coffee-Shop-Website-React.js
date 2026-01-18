@@ -5,6 +5,25 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 
+const icons = [
+  {
+    id: 1,
+    icon: <FaFacebookF size={30} />,
+  },
+  {
+    id: 2,
+    icon: <FaLinkedinIn size={30} />,
+  },
+  {
+    id: 3,
+    icon: <FaTwitter size={30} />,
+  },
+  {
+    id: 4,
+    icon: <FaGithubSquare size={30} />,
+  },
+];
+
 export default function Footer() {
   return (
     <footer className="footer" id="footer">
@@ -20,18 +39,13 @@ export default function Footer() {
         All Right Reserved
       </p>
       <div className="social-icons">
-        <div className="icon">
-          <FaFacebookF size={30}/>
-        </div>
-        <div className="icon">
-          <FaLinkedinIn size={30}/>
-        </div>
-        <div className="icon">
-          <FaTwitter size={30}/>
-        </div>
-        <div className="icon">
-          <FaGithubSquare size={30}/>
-        </div>
+        {icons.map((icon) => {
+          return (
+            <div className="icon" key={icon.id}>
+              {icon.icon}
+            </div>
+          );
+        })}
       </div>
     </footer>
   );
