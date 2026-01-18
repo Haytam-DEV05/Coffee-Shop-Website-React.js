@@ -6,30 +6,26 @@ export default function Blogs() {
   const carts = [
     {
       id: 1,
-      img: "/public/images/g-img-1.jpg",
+      img: "/images/g-img-1.jpg",
       title: "blog title goes here.",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,illum ?",
     },
     {
       id: 2,
-      img: "/public/images/g-img-2.jpg",
+      img: "/images/g-img-2.jpg",
       title: "blog title goes here.",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,illum ?",
     },
     {
       id: 3,
-      img: "/public/images/g-img-3.jpg",
+      img: "/images/g-img-3.jpg",
       title: "blog title goes here.",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,illum ?",
     },
   ];
-  // icon01: <FaCalendarAlt />,
-  // date: "21st may, 2022",
-  // icon02: <FaRegUser />,
-  // info: "by admin",
 
   return (
     <section id="blogs">
